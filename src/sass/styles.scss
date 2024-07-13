@@ -1,0 +1,24 @@
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// components
+@import './components/navbar';
+@import './components/hero';
+
+// Custom styles 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+div,
+main,
+nav,
+footer{
+    border: 1px solid blueviolet;
+}
