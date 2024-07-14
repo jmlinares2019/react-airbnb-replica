@@ -1,9 +1,9 @@
 function Card(props){
 
     let status;
-    if (props.available === 0){
+    if (props.experience.openSpots === 0){
         status = "Sold out"; 
-    } else if (props.location === "Online") { 
+    } else if (props.experience.location === "Online") { 
          status = "Online";
     } else {
         status = undefined;
@@ -13,12 +13,12 @@ function Card(props){
         <section className="experience-card">
             <div className="experience-img-wrapper">
                 {status !== undefined && <span className="experience-status">{ status }</span>}
-                <img src={`src/assets/img/${props.img}`} alt={props.title} />
+                <img src={`src/assets/img/${props.experience.coverImg}`} alt={props.experience.title} />
             </div>
             <div className="experience-data-wrapper">
-                <span className="experience-rating">{props.rating}<span className="experience-rating-meta">({props.reviews}) · {props.location}</span></span> 
-                <h2 className="experience-name">{props.title}</h2>
-                <p className="experience-price"><span>From ${props.price}</span>/ person</p>
+                <span className="experience-rating">{props.experience.stats.rating}<span className="experience-rating-meta">({props.experience.stats.reviewCount}) · {props.experience.location}</span></span> 
+                <h2 className="experience-name">{props.experience.title}</h2>
+                <p className="experience-price"><span>From ${props.experience.price}</span>/ person</p>
             </div>
         </section>
     )
