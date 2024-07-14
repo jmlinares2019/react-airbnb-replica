@@ -8,7 +8,9 @@
         .experience-status{
             position: absolute;
             margin: .3rem;
-            font-size: remify(10px); 
+            font-size: remify(10px);
+            text-transform: uppercase;
+            font-weight: 600;
             padding: .2rem 0.5rem;
             background-color: white;
             border-radius: 5px;
