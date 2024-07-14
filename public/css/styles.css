@@ -11877,6 +11877,8 @@ textarea.form-control-lg {
   position: absolute;
   margin: 0.3rem;
   font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 600;
   padding: 0.2rem 0.5rem;
   background-color: white;
   border-radius: 5px;
@@ -11919,13 +11921,6 @@ html {
 html body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-div,
-main,
-nav,
-footer {
-  border: 1px solid blueviolet;
 }
 
 .experiences-wrapper {
