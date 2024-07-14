@@ -11850,32 +11850,73 @@ textarea.form-control-lg {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-.img-wrapper {
-  margin-top: 30px;
+.hero .img-wrapper {
+  margin: 1.875rem 0 1rem;
+  text-align: center;
 }
-
-.title {
-  font-size: 36px;
+.hero .img-wrapper .hero-img {
+  max-width: 400px;
+}
+.hero .title {
+  font-size: 2.25rem;
   font-weight: 600;
 }
-
-.description {
-  font-size: 16px;
+.hero .description {
+  font-size: 1rem;
   font-weight: 300;
+}
+
+.experience-card {
+  width: 175px;
+  margin-bottom: 50px;
+}
+.experience-card .experience-img-wrapper {
+  position: relative;
+}
+.experience-card .experience-img-wrapper .experience-status {
+  position: absolute;
+  margin: 0.3rem;
+  font-size: 0.625rem;
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+}
+.experience-card .experience-img-wrapper img {
+  width: 100%;
+}
+.experience-card .experience-data-wrapper {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 0.625rem;
+}
+.experience-card .experience-data-wrapper .experience-rating::before {
+  content: url("/img/star.svg");
+  display: inline-block;
+  margin-right: 0.3125rem;
+}
+.experience-card .experience-data-wrapper .experience-rating .experience-rating-meta {
+  margin-left: 0.1875rem;
+  color: #918E9B;
+}
+.experience-card .experience-name {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #222222;
+}
+.experience-card .experience-price span {
+  font-weight: 600;
+  margin-right: 0.1875rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
+html {
+  font-size: 16px;
+}
+html body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-div,
-main,
-nav,
-footer {
-  border: 1px solid blueviolet;
 }
