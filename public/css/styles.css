@@ -11851,8 +11851,9 @@ textarea.form-control-lg {
 }
 
 .hero .img-wrapper {
+  display: flex;
+  justify-content: center;
   margin: 1.875rem 0 1rem;
-  text-align: center;
 }
 .hero .img-wrapper .hero-img {
   max-width: 400px;
@@ -11925,4 +11926,5 @@ html body {
 
 .experiences-wrapper {
   flex-wrap: nowrap;
+  overflow-x: auto;
 }
