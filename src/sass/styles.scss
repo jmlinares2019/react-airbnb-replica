@@ -1,9 +1,15 @@
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+// abstracts
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+
 // components
 @import './components/navbar';
 @import './components/hero';
+@import './components/card';
 
 // Custom styles 
 
@@ -11,14 +17,18 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+html{
+    font-size: $html-font-size;
+
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
 }
 
 div,
 main,
 nav,
 footer{
-    border: 1px solid blueviolet;
+    // border: 1px solid blueviolet;
 }
