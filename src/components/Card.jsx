@@ -1,16 +1,24 @@
-import cardPicture from '../assets/img/katie-zaferes.jpg'
+function Card(props){
 
-function Card(){
+    let status;
+    if (props.available === 0){
+        status = "Sold out"; 
+    } else if (props.location === "Online") { 
+         status = "Online";
+    } else {
+        status = undefined;
+    }
+
     return(
         <section className="experience-card">
             <div className="experience-img-wrapper">
-                <span className="experience-status">SOLD OUT</span>
-                <img src={cardPicture} alt="Katie Zaferes" />
+                {status !== undefined && <span className="experience-status">{ status }</span>}
+                <img src={`src/assets/img/${props.img}`} alt={props.title} />
             </div>
             <div className="experience-data-wrapper">
-                <span className="experience-rating">5.0<span className="experience-rating-meta">(6) · USA</span></span> 
-                <h2 className="experience-name">Life lessons with Katie Zaferes</h2>
-                <p className="experience-price"><span>From $136</span>/ person</p>
+                <span className="experience-rating">{props.rating}<span className="experience-rating-meta">({props.reviews}) · {props.location}</span></span> 
+                <h2 className="experience-name">{props.title}</h2>
+                <p className="experience-price"><span>From ${props.price}</span>/ person</p>
             </div>
         </section>
     )
