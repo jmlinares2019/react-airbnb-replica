@@ -11920,3 +11920,14 @@ html body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+div,
+main,
+nav,
+footer {
+  border: 1px solid blueviolet;
+}
+
+.experiences-wrapper {
+  flex-wrap: nowrap;
+}
