@@ -13,7 +13,6 @@ function Card(){
                 <p className="experience-price"><span>From $136</span>/ person</p>
             </div>
         </section>
-        
     )
 }
 

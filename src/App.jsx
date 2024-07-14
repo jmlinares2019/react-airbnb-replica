@@ -10,7 +10,13 @@ function App() {
       <Navbar />
       <div className="container">
         <Hero/>
-        <Card />
+        <div className="row experiences-wrapper">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        
       </div>
     </React.Fragment>
   )  
