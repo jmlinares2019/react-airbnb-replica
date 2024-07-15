@@ -13,7 +13,7 @@ function Card(props){
         <section className="experience-card">
             <div className="experience-img-wrapper">
                 {status !== undefined && <span className="experience-status">{ status }</span>}
-                <img src={`src/assets/img/${props.experience.coverImg}`} alt={props.experience.title} />
+                <img src={`img/${props.experience.coverImg}`} alt={props.experience.title} />
             </div>
             <div className="experience-data-wrapper">
                 <span className="experience-rating">{props.experience.stats.rating}<span className="experience-rating-meta">({props.experience.stats.reviewCount}) · {props.experience.location}</span></span> 
